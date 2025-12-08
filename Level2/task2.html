@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Webpage + Hamburger Menu</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* ---------------- NAVBAR ------------------ */
+  nav {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    float: right;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* ----------- HAMBURGER MENU (HIDDEN ON DESKTOP) ----------- */
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    float: right;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Menu appears when toggle is checked */
+  #menu-toggle:checked ~ ul {
+    display: block;
+  }
+
+  /* ---------------- HEADER CONTENT ---------------- */
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #f1f1f1;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  /* ---------------- RESPONSIVE LAYOUT ---------------- */
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .box {
+    flex: 1;
+    padding: 20px;
+    background: #eee;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  /* ==========================
+       MEDIA QUERIES  
+     ========================== */
+
+  /* Tablets & Small Screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #444;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    nav ul li {
+      padding: 10px 0;
+    }
+
+    .menu-btn {
+      display: block;
+    }
+  }
+
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 28px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    .box {
+      font-size: 16px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ============== NAVBAR ============== -->
+<nav>
+  <span class="logo">My Website</span>
+
+  <!-- Hamburger button -->
+  <label for="menu-toggle" class="menu-btn">&#9776;</label>
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Navigation menu -->
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============== HEADER ============== -->
+<header id="home">
+  <h1>Responsive Webpage Example</h1>
+  <p>This page adapts to all screen sizes using CSS media queries.</p>
+</header>
+
+<!-- ============== CONTENT SECTION ============== -->
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
