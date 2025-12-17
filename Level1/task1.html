@@ -2,81 +2,43 @@
 <html lang="en">
 <head>
   <title>Task-1</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      padding: 0;
-    }
-
-    /* Navigation Menu */
-    nav {
-      background-color: #333;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-
-    nav a {
-      color: white;
-      margin-right: 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Form Styling */
-    form {
-      margin-top: 20px;
-    }
-
-    input[type="text"] {
-      padding: 8px;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      padding: 8px 16px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #0056b3;
-    }
-
-    img {
-      width: 250px;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="/css/level1Task1.css">
 </head>
 <body>
 
   <!-- Navigation Menu -->
   <nav>
-    <a href="#">Home</a>
+    <a href="#" class="active">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
   </nav>
 
-  <!-- Heading, Paragraph, Image -->
+  <!-- Section -->
   <h1>Welcome to My Simple Webpage</h1>
-  <p>This is a paragraph describing the webpage content. It includes a heading, paragraph, and image for Task 1.</p>
-  <img src="/Level1/task1.png" alt="Sample Image">
+  <section class="sec">
+    <div class="description">
+      <p>
+      This webpage demonstrates a simple layout that includes a navigation menu,
+      heading, paragraph, image, and a basic form as part of Task 1.
+      </p>
 
-  <!-- Basic Form -->
-  <form>
-    <input type="text" placeholder="Enter something..." required>
-    <input type="submit" value="Submit">
-  </form>
+      <h2 class="task-title">Task-1 List</h2>
 
+      <ol class="task-list">
+        <li>Navigation menu with three links</li>
+        <li>Simple webpage with heading, paragraph, and image</li>
+        <li>Basic form with a single input field and submit button</li>
+      </ol>
+    </div>
+    
+    <!-- Image -->
+    <img src="/IMG/task1.png" alt="Sample Image">
+
+    <!-- Basic Form -->
+    <form>
+      <input type="text" placeholder="Enter something..." required>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
 </body>
 </html>
