@@ -1,6 +1,7 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
   }
 
   /* ---------------- NAVBAR ------------------ */
@@ -30,7 +31,7 @@
     font-weight: 500;
   }
 
-  /* ----------- HAMBURGER MENU (HIDDEN ON DESKTOP) ----------- */
+  /* ----------- HAMBURGER MENU ----------- */
   .menu-btn {
     display: none;
     cursor: pointer;
@@ -78,6 +79,16 @@
     font-size: 18px;
   }
 
+  .img {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .text {
+   text-align: justify;
+   padding: 0 30px;
+  }
+
   /* ==========================
        MEDIA QUERIES  
      ========================== */
@@ -116,6 +127,9 @@
       font-size: 16px;
     }
 
+    .container{
+      padding: 30px;
+    }
     .box {
       font-size: 16px;
     }
