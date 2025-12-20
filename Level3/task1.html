@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Gallery & Slideshow</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/CSS/level3Task1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">My Website</span>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#slideshow">Slideshow</a></li>
+      <li><a href="#tasks">Task List</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <h1>Welcome 👋</h1>
+    <p>
+      An interactive image gallery with fullscreen preview and an automatic
+      slideshow built using pure HTML & CSS.
+    </p>
+
+    <a href="#slideshow" class="btn">View Slideshow</a>
+  </section>
+
+  <!-- SLIDESHOW -->
+  <section id="slideshow">
+    <h2>Slideshow</h2>
+
+    <div class="slideshow">
+      <img src="/IMG/img_1.png" alt="Slide 1" />
+      <img src="/IMG/img_2.png" alt="Slide 2" />
+      <img src="/IMG/img_3.png" alt="Slide 3" />
+      <img src="/IMG/img_4.png" alt="Slide 4" />
+      <img src="/IMG/img_5.png" alt="Slide 5" />
+      <img src="/IMG/img_6.png" alt="Slide 6" />
+    </div>
+  </section>
+
+  <!-- TASK LIST / GALLERY -->
+  <section id="tasks">
+    <h2>Task List</h2>
+
+    <div class="gallery">
+      <a href="#img1"><img src="/IMG/list1.jpg" alt="Task Image 1"></a>
+      <a href="#img2"><img src="/IMG/list2.jpg" alt="Task Image 2"></a>
+      <a href="#img3"><img src="/IMG/list3.jpg" alt="Task Image 3"></a>
+      <a href="#img4"><img src="/IMG/list4.jpg" alt="Task Image 4"></a>
+      <a href="#img5"><img src="/IMG/list5.jpg" alt="Task Image 5"></a>
+      <a href="#img6"><img src="/IMG/list6.jpg" alt="Task Image 6"></a>
+    </div>
+  </section>
+  <div id="img1" class="full-img">
+    <a href="#tasks" class="close-btn">&times;</a>
+    <img src="/IMG/list1.jpg" alt="Task Image 1">
+  </div>
+
+  <div id="img2" class="full-img">
+    <a href="#tasks" class="close-btn">&times;</a>
+    <img src="/IMG/list2.jpg" alt="Task Image 2">
+  </div>
+
+  <div id="img3" class="full-img">
+    <a href="#tasks" class="close-btn">&times;</a>
+    <img src="/IMG/list3.jpg" alt="Task Image 3">
+  </div>
+
+  <div id="img4" class="full-img">
+    <a href="#tasks" class="close-btn">&times;</a>
+    <img src="/IMG/list4.jpg" alt="Task Image 4">
+  </div>
+
+  <div id="img5" class="full-img">
+    <a href="#tasks" class="close-btn">&times;</a>
+    <img src="/IMG/list5.jpg" alt="Task Image 5">
+  </div>
+
+  <div id="img6" class="full-img">
+    <a href="#tasks" class="close-btn">&times;</a>
+    <img src="/IMG/list6.jpg" alt="Task Image 6">
+  </div>
+
+</body>
+</html>

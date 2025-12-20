@@ -1,20 +1,133 @@
-#colorBtn {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      margin: 10px 0;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-    #calc input {
-      padding: 6px;
-      margin: 5px;
-      width: 80px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
 
-    #calc button {
-      padding: 6px 12px;
-      cursor: pointer;
-    }
+/* ================= NAVBAR ================= */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #1e1e2f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #6c63ff;
+}
+
+body {
+  background: #f4f6fb;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Card Layout */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  padding: 12px 28px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #574ee3;
+  transform: translateY(-3px);
+}
+
+/* Active Button */
+#colorBtn.active {
+  background: green;
+}
+
+/* Calculator */
+.calculator {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 120px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Output Text */
+.output {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #1e1e2f;
+}
