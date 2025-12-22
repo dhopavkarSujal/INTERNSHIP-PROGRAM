@@ -9,14 +9,15 @@
 </head>
 <body>
 
-  <!-- ============ NAVBAR ============ -->
-  <nav class="top-nav">
-    <span class="nav-title">JS Tasks</span>
-    <ul class="nav-links">
-      <li><a href="#sec1">Sec 1</a></li>
-      <li><a href="#sec2">Sec 2</a></li>
-      <li><a href="#sec3">Sec 3</a></li>
-    </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="/IMG/logo.jpg" width="120">
+
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#form">Form</a>
+    </div>
   </nav>
 
   <main class="container">
@@ -54,7 +55,15 @@
 
   </main>
 
-  <!-- ============ JAVASCRIPT ============ -->
+
+  <div class="next-page">
+    <a href="/Level1/task1.html" class="next-btn">← Previous Page</a>
+    <a href="/Level2/task1.html" class="next-btn">
+      Next Page →
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT LoGIC-->
   <script>
     function changeColor() {
       document.getElementById("colorBtn").classList.toggle("active");

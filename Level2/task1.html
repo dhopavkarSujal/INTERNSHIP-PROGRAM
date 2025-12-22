@@ -2,82 +2,99 @@
 <html lang="en">
 <head>
   <title>Task-1: Bootstrap Responsive Grid</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/CSS/level2Task1.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav>
-    <span class="logo">My Website</span>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+
+ <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="/IMG/logo.jpg" width="120">
+
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#form">Form</a>
+    </div>
   </nav>
-  <!-- Section -->
-  <div>
-    <h1 class="mb-4">Responsive Grid</h1>
+  <section class="page-header" id="home">
+    <h1>Responsive Grid</h1>
+    <p>Bootstrap-based responsive card layout</p>
+  </section>
+
+  <section class="container" id="grid">
     <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="custom-card">
+          <img src="/IMG/img_1.png" alt="Item 1">
+          <p>Modern illustration representing core web development tools and workflows.</p>
+        </div>
+      </div>
+
       <!-- Repeat cards -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_1.png" alt="Item-1">
-          <p class="text">Modern illustration representing core web development tools and workflows.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_2.png" alt="Item 2">
+          <p>A developer designing clean and responsive user interfaces using front-end technologies.</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_2.png" alt="Item-2">
-          <p class="text">A developer designing clean and responsive user interfaces using front-end technologies.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_3.png" alt="Item 3">
+          <p>Visual overview of the complete web development process from coding to deployment.</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_3.png" alt="Item-3">
-          <p class="text">Visual overview of the complete web development process from coding to deployment.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_4.png" alt="Item 4">
+          <p>A programmer working across multiple languages and platforms to build applications.</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_4.png" alt="Item-4">
-          <p class="text">A programmer working across multiple languages and platforms to build applications.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_5.png" alt="Item 5">
+          <p>Illustration showcasing essential web development tools like HTML, CSS, and editors.</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_5.png" alt="Item-5">
-          <p class="text">Illustration showcasing essential web development tools like HTML, CSS, and editors.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_6.png" alt="Item 6">
+          <p>Concept image highlighting full-stack learning and modern web technologies.</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_6.png" alt="Item-6">
-          <p class="text">Concept image highlighting full-stack learning and modern web technologies.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_7.png" alt="Item 7">
+          <p>Developers collaborating on real-world projects with code and UI components.</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_7.png" alt="Item-7">
-          <p class="text">Developers collaborating on real-world projects with code and UI components.</p>
+        <div class="custom-card">
+          <img src="/IMG/img_8.png" alt="Item 8">
+          <p>A web developer improving skills by working with multiple programming concepts.</p>
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <img class="img" src="/IMG/img_8.png" alt="Item-8">
-          <p class="text">A web developer improving skills by working with multiple programming concepts.</p>
-        </div>
-      </div>
     </div>
+  </section>
+
+  <div class="next-page">
+    <a href="/Level1/task2.html" class="next-btn">← Previous Page</a>
+    <a href="/Level2/task2.html" class="next-btn">Next Page →</a>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

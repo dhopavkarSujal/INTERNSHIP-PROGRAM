@@ -11,40 +11,37 @@ html {
 }
 
 /* ================= NAVBAR ================= */
-.top-nav {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
   background: #1e1e2f;
-  padding: 15px 30px;
+  padding: 5px 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-.nav-title {
+.navbar img {
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.navbar a {
   color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #fff;
+  margin: 0 20px;
   text-decoration: none;
   font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 20px;
   transition: 0.3s;
+  margin-left: 70px;
 }
 
-.nav-links a:hover {
-  background: #6c63ff;
+.navbar a:hover,
+.navbar a.active {
+  color: #6c63ff;
 }
 
 body {
@@ -88,7 +85,6 @@ h1 {
   color: #555;
 }
 
-/* Buttons */
 button {
   padding: 12px 28px;
   border: none;
@@ -110,7 +106,6 @@ button:hover {
   background: green;
 }
 
-/* Calculator */
 .calculator {
   display: flex;
   justify-content: center;
@@ -130,4 +125,28 @@ input {
   margin-top: 10px;
   font-weight: 500;
   color: #1e1e2f;
+}
+
+/* NEXT PAGE BUTTON */
+.next-page {
+  text-align: center;
+  margin: 60px 0 40px;
+}
+
+.next-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #1e1e2f;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.next-btn:hover {
+  background: #6c63ff;
+  transform: translateY(-4px);
 }
