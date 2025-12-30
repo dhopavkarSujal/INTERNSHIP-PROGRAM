@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* ---------------- NAVBAR ------------------ */
+/* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
   top: 0;
@@ -40,28 +40,60 @@ body {
 .navbar a.active {
   color: #1e1e2f;
 }
-
-/* ----------- HAMBURGER MENU ----------- */
-.menu-btn {
-  display: none;
-  cursor: pointer;
-  font-size: 28px;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
-  background: #2b2b3d;
+.nav-links {
+  display: flex;
+  gap: 30px;
 }
 
-.menu-btn:active {
-  transform: scale(0.95);
+.navbar a {
+  margin: 0;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.15);
 }
 
 #menu-toggle {
   display: none;
 }
+@media (max-width: 768px) {
 
-#menu-toggle:checked ~ ul {
-  display: flex;
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+    background: #6c63ff;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+
+    display: none; /* hidden by default */
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-align: center;
+    padding: 8px 0;
+  }
+}
+#menu-toggle:checked ~ .nav-links {
   animation: slideDown 0.3s ease;
 }
 
@@ -75,8 +107,7 @@ body {
     transform: translateY(0);
   }
 }
-
-/* ---------------- HEADER CONTENT ---------------- */
+/* ================= HEADER CONTENT ================= */
 header {
   padding: 60px 20px 40px;
   text-align: center;
@@ -92,7 +123,7 @@ header p {
   color: #666;
 }
 
-/* ---------------- RESPONSIVE LAYOUT ---------------- */
+/* ================= RESPONSIVE LAYOUT ================= */
 .container {
   max-width: 1100px;
   margin: 0 auto;

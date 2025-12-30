@@ -12,7 +12,8 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <img src="/IMG/logo.png" width="120">
-
+    <label for="menu-toggle" class="menu-btn">&#9776;</label>
+    <input type="checkbox" id="menu-toggle">
     <div class="nav-links">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
@@ -21,17 +22,14 @@
   </nav>
 
   <main class="container">
-
     <h1>JavaScript Basics</h1>
     <p class="subtitle">Simple interactive tasks using JavaScript</p>
-
     <!-- Task 1 -->
     <section class="card" id="sec1">
       <h2>Button Color Changer</h2>
       <p>Click the button to toggle its color.</p>
       <button id="colorBtn" onclick="changeColor()">Click Me</button>
     </section>
-
     <!-- Task 2 -->
     <section class="card" id="sec2">
       <h2>Greeting</h2>
@@ -39,7 +37,6 @@
       <button onclick="showGreeting()">Show Greeting</button>
       <p class="output" id="greeting"></p>
     </section>
-
     <!-- Task 3 -->
     <section class="card" id="sec3">
       <h2>Calculator</h2>
@@ -54,8 +51,6 @@
     </section>
 
   </main>
-
-
   <div class="next-page">
     <a href="/Level1/task1.html" class="next-btn">← Previous Page</a>
     <a href="/Level2/task1.html" class="next-btn">

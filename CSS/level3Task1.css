@@ -1,7 +1,4 @@
-/* ================= GOOGLE FONT ================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +49,73 @@ body {
 .navbar a.active {
   color: #1e1e2f;
 }
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
 
+.navbar a {
+  margin: 0;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.15);
+}
+
+#menu-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+    background: #6c63ff;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-align: center;
+    padding: 8px 0;
+  }
+}
+#menu-toggle:checked ~ .nav-links {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ================= GLOBAL SECTION ================= */
 section {
   max-width: 1100px;
@@ -135,7 +198,7 @@ h2 {
 .slideshow img:nth-child(2) { animation-delay: 6s; }
 .slideshow img:nth-child(3) { animation-delay: 12s; }
 
-/* ================= TASK LIST / GALLERY ================= */
+/* ================= TASK LIST ================= */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
